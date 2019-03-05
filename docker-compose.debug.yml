@@ -1,13 +1,7 @@
 version: '2.1'
-
 services:
   apps:
-    image: apps
+    image: mold
+    container_name: mold_app
     build: .
-    environment:
-      NODE_ENV: development
-    ports:
-      - 3000:3000
-      - 9229:9229
-    ## set your startup file here
-    command: node --inspect app.js
+    command: "yarn start"
