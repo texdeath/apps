@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    // Material-UIの型を機能させるためオプションを厳密化
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    // TSはECMAScript 5に変換
+    "target": "es2020",
+    // TSのモジュールはES Modulesとして出力
+    "module": "commonjs",
+    // JSXの書式を有効に設定
+    "jsx": "react",
+    "outDir": "./dist",
+    "strict": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "sourceRoot": "./src",
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "lib": [
+      "es2020",
+      "dom"
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  // コンパイル対象のファイル
+  "files": [
+    "src/main.ts" // メインプロセス用
+    // レンダープロセスは Webpack でターゲットを指定するので、ここでは不要
+  ]
+}

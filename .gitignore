@@ -1,6 +1,10 @@
 # Created by https://www.gitignore.io/api/node
 # Edit at https://www.gitignore.io/?templates=node
 
+dist/
+src/*.js
+src/*.js.map
+
 ### Node ###
 # Logs
 logs
@@ -39,5 +43,7 @@ node_modules/
 
 # vs code
 .vscode/
+
+.idea/
 
 # End of https://www.gitignore.io/api/node

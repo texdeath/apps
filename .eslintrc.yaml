@@ -1,0 +1,47 @@
+---
+root: true
+env:
+  browser: true
+  node: true
+parserOptions:
+  parser: "@typescript-eslint/parser"
+extends:
+  - plugin:@typescript-eslint/recommended
+  - plugin:prettier/recommended
+  - plugin:import/errors
+  - plugin:react/recommended
+  - prettier
+plugins:
+  - prettier
+  - "@typescript-eslint"
+rules:
+  complexity:
+    - error
+    - 10
+arrow-body-style:
+  - error
+  - as-needed
+no-console: 0
+func-style:
+  - 2
+  - expression
+  - allowArrowFunctions: true
+import/order:
+  - error
+  - groups:
+  - internal
+  - builtin
+  - external
+  - parent
+pathGroups:
+  - pattern: "@/**"
+group: internal
+position: before
+"@typescript-eslint/no-namespace": 0
+import/no-unresolved: 'off'
+react/prop-types: 0
+no-unused-vars: 1
+"@typescript-eslint/no-unused-vars": 0
+settings:
+  react:
+    version: detect

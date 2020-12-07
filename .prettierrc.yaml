@@ -1,0 +1,3 @@
+semi: true # 文末のセミコロンを強制する
+jsxBracketSameLine: true # JSXの後ろの'>'を同じ行にする
+arrowParens: avoid # Arrow関数の引数のカッコは必要な場合のみつける
