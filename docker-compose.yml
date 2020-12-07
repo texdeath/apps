@@ -1,7 +1,0 @@
-version: '2.1'
-services:
-  apps:
-    image: mold
-    container_name: mold_app
-    build: .
-    command: "yarn start"
