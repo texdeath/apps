@@ -2,8 +2,8 @@
 # Edit at https://www.gitignore.io/?templates=node
 
 dist/
-src/*.js
-src/*.js.map
+src/**/*.js
+src/**/*.js.map
 
 ### Node ###
 # Logs
