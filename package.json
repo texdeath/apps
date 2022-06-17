@@ -29,7 +29,7 @@
     "@types/react-redux": "^7.1.11",
     "@types/redux": "^3.6.0",
     "@types/styled-components": "^5.1.4",
-    "electron": "^11.5.0",
+    "electron": "^15.5.5",
     "electron-builder": "^22.9.1",
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
